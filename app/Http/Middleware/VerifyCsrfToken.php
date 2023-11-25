@@ -14,7 +14,8 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         'login',
         'index',
-        'changePassword'
+        'changePassword',
+        'CheckIfFirtsLogin'
 
     ];
 }
