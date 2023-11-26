@@ -10,11 +10,12 @@
 }
 
 #left_container{
-    width: 170px !important;
+    /* width: 170px !important;
     height: 89vh;
     background-color: #7d2ae8;
     margin-right: 20px;
-    margin-top: -20px;
+    margin-top: -20px; */
+    margin-top: 0;
 }
 
 #exaple{
@@ -54,4 +55,8 @@ body{
   .home1.show::before {
     opacity: 1;
     pointer-events: auto;
+  }
+
+  #right_container{
+    margin-left: 70px;
   }

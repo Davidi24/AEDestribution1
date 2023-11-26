@@ -14,6 +14,11 @@
     <!-- Font Awesome CSS -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Call Side Bar Css -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/sideBar/style.css">
     <style>
         #prova {
             height: 89vh;
@@ -37,6 +42,8 @@
 </head>
 
 <body>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////  -->
     <!-- Change passwor -->
     <section class="home1">
         <div class="form_container">
@@ -56,25 +63,68 @@
                         <i class="uil uil-lock password"></i>
                         <i class="uil uil-eye-slash pw_hide"></i>
                     </div>
-
                     <button class="button" id="loginbutton">Change Password</button>
                 </form>
             </div>
-
         </div>
+        <!-- ////////////////////////////////////////////////////////////////////////////  -->
 
 
 
 
-        <div id="container">
+
+
+
+        <!-- ////////////////////////////////////////////////////////////////////////////  -->
+        <!--Table-->
+        <!-- <div id="container">
             <div id="header">Header</div>
-            <div id="body_container">
-                <div id="left_container">Lakjadhskahdkda</div>
-                <div id="right_container">
+            <div id="body_container"> -->
+                <!--Side Bar-->
+                <div id="left_container">
 
-                    <div id="prova">
+                    <div class="wrapper d-flex align-items-stretch">
+                        <nav id="sidebar">
+                            <div class="custom-menu">
+                                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                                </button>
+                            </div>
+                            <div class="img bg-wrap text-center py-4" style="background-image: url(images/sideBar/bg_1.jpg);">
+                                <div class="user-logo">
+                                    <div class="img" style="background-image: url(images/sideBar/logo.jpg);"></div>
+                                    <h3>Catriona Henderson</h3>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled components mb-5">
+                                <li class="active">
+                                    <a href="#"><span class="fa fa-home mr-3"></span> Home</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="fa fa-download mr-3 notif"><small class="d-flex align-items-center justify-content-center">5</small></span> Download</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="fa fa-gift mr-3"></span> Gift Code</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="fa fa-trophy mr-3"></span> Top Review</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="fa fa-cog mr-3"></span> Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="fa fa-support mr-3"></span> Support</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="fa fa-sign-out mr-3"></span> Sign Out</a>
+                                </li>
+                            </ul>
 
+                        </nav>
 
+                        <!-- Page Content  -->
+                        <div id="right_container">
+                    kjsbkhfskdhksdsjkd
+                    <!-- <div id="prova">
                         <table id="example" class="table table-striped" style="width:100%; border: 1">
                             <thead>
                                 <tr>
@@ -97,23 +147,31 @@
                                     <th>Creation Date</th>
                                 </tr>
                             </thead>
-
                             <tbody id="tablebody">
-
                             </tbody>
-
                         </table>
+                    </div> -->
+                </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+    <!-- ////////////////////////////////////////////////////////////////////////////  -->
+
 
     <script src='https://code.jquery.com/jquery-3.7.0.js'></script>
     <script src='https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js'></script>
     <script src='https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js'></script>
     <script src='https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js'></script>
     <script src="{{ asset('js/index.js') }}"></script>
+    <script src="{{ asset('js/SideBar/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/SideBar/popper.js') }}"></script>
+    <script src="{{ asset('js/SideBar/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/SideBar/main.js') }}"></script>
+
     <script>
         function fetchData() {
             fetch('/faturat') // Replace with the correct API endpoint
@@ -139,10 +197,8 @@
                         row.insertCell(14).textContent = fatura.column14;
                         row.insertCell(15).textContent = fatura.column15;
                         row.insertCell(16).textContent = fatura.creation_date;
-
                         // Add more cells as needed
                     });
-
                     $(document).ready(function() {
                         $('#example').DataTable({
                             //disable sorting on last column
@@ -165,8 +221,6 @@
                                     '<option value="50">50</option>' +
                                     '<option value="-1">All</option>' +
                                     '</select> results',
-
-
                             },
                             "iDisplayLength": 5
                         })
@@ -174,7 +228,6 @@
                 })
                 .catch(error => console.error('Error:', error));
         }
-
         window.onload = fetchData;
     </script>
 

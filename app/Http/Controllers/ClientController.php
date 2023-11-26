@@ -7,9 +7,31 @@ use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
-function getClients(){
-  $clinets =   DB::table('NexusServer.dbo.Client');
-  return response()->json(['message' => $clinets]);
+    public function getClients()
+    {
+        $clients = DB::select("
+            SELECT
+                [IdClient],
+                [idcompany],
+                [businessname],
+                [vatnumber],
+                [idcontact],
+                [notes],
+                [IdInternalRevenueService],
+                [Certification],
+                [Agency],
+                [WithoutVat],
+                [TypeOfBusiness],
+                [IdEconomicSector],
+                [TaxPayerStatus],
+                [Municipality],
+                [CertPath],
+                [IdCountry],
+                [extrafields]
+            FROM [NexusServer].[dbo].[Client]
+        ");
 
-}
+        return response()->json(["message" => $clients]);
+
+    }
 }

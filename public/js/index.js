@@ -81,13 +81,6 @@ pwShowHide.forEach((icon) => {
     });
 });
 
-
-
-
-
-
-
-
 //it check if it is logeed in for the first time if not it close the tab so you can not change
 // the password any more
 //.......................................................................................//

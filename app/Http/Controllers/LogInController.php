@@ -14,7 +14,7 @@ class LogInController extends Controller
     }
 
     function checkUser(Request $request) {
-        $email = $request->input('email'); // assuming email comes from the request
+        $email = $request->input('email');
         $password = $request->input('password');
 
         $user = DB::table('NexusServer.dbo.User')->where('username', $email)->first();
