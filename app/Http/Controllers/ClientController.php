@@ -32,6 +32,12 @@ class ClientController extends Controller
         ");
 
         return response()->json(["message" => $clients]);
+    }
+
+    public function getClientInfoFaturat(Request $request){
+        $vatnumber = $request->input('vatnumber');
+
+
 
     }
 }
