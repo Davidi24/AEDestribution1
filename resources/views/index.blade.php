@@ -125,14 +125,14 @@
                     </ul>
 
                 </nav>
-
+                </div>
             <!-- Page Content  -->
             <div class="right_container">
             <div class="right_headerr">lll</div>
             <div class="filter">Filter</div>
             <div class="faturat_table">Table</div>
             </div>
-        </div>
+
 
 
 

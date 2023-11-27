@@ -17,6 +17,8 @@
     margin-top: -20px; */
     margin-top: 0;
     overflow: hidden;
+
+    overflow-y: scroll;
     /* position: fixed; */
 }
 
@@ -73,6 +75,7 @@ body {
     margin-top: 1px;
     background-color: blue;
     height: 12vh;
+    z-index: -100;
 }
 
 .filter{

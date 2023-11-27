@@ -8196,7 +8196,11 @@ margin-top: 0;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  position: relative;
+  position: fixed;
+  z-index: 10000;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
  }
   #sidebar .h6 {
     color: #fff; }
@@ -8220,7 +8224,8 @@ margin-top: 0;
       padding: 10px 30px;
       background: #2f89fc; }
   #sidebar ul.components {
-    padding: 0; }
+    padding: 0;
+height: 0; }
   #sidebar ul li {
     font-size: 16px; }
     #sidebar ul li > ul {
