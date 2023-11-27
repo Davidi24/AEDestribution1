@@ -8196,7 +8196,7 @@ margin-top: 0;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  position: fixed;
+  position: relative;
  }
   #sidebar .h6 {
     color: #fff; }
