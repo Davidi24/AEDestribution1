@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/login', [LogInController::class, 'loginview']);
 Route::get('/index', [indexController::class, 'indexView'])->name('index');
+Route::get('/prova', [indexController::class, 'provaView'])->name('index');
 Route::get('/faturat', [faturatController::class, 'getFaturat']);
 
 Route::get('/', function () {

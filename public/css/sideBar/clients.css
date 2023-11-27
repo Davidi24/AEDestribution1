@@ -7,10 +7,7 @@
 .clients_wrapper.active {
     height: 280px;
 }
-.right_header {
-    height: 10vh;
-    background-color: blue;
-}
+
 
 .clients_wrapper.active #clients {
     z-index: 100;

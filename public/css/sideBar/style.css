@@ -8197,9 +8197,9 @@ margin-top: 0;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   position: fixed;
-  z-index: 10000;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  z-index: 100;
+overflow-y: scroll;
+
 
  }
   #sidebar .h6 {
@@ -8207,7 +8207,8 @@ margin-top: 0;
   #sidebar.active {
     margin-left: -300px; }
     #sidebar.active .custom-menu {
-      margin-right: -50px; }
+      margin-right: -50px;
+    z-index: 1002; }
     #sidebar.active .btn.btn-primary:before {
       content: "\f053";
       font-family: "FontAwesome";
@@ -8290,7 +8291,11 @@ height: 0; }
       position: relative;
       color: #000;
       width: 30px;
-      height: 30px; }
+      height: 30px;
+    z-index: 1001;
+overflow: visible !important;
+margin-left: 60px;
+}
       #sidebar .custom-menu .btn.btn-primary:after, #sidebar .custom-menu .btn.btn-primary:before {
         position: absolute;
         top: 2px;
