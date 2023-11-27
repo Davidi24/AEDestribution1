@@ -82,7 +82,6 @@
             <div id="header">Header</div>
             <div id="body_container"> -->
         <!--Side Bar-->
-        <div class="CONTAINER">
         <div id="left_container">
 
             <div class="wrapper d-flex align-items-stretch">
@@ -126,20 +125,21 @@
                     </ul>
 
                 </nav>
-            </div>
+
             <!-- Page Content  -->
-        </div>
-
-
-
-        <div class="right_container">
+            <div class="right_container">
             <div class="right_headerr">lll</div>
-
             <div class="filter">Filter</div>
-            <div>Table</div>
+            <div class="faturat_table">Table</div>
+            </div>
+        </div>
+
+
+
+
 
         </div>
- </div>
+
     </section>
     <!-- ////////////////////////////////////////////////////////////////////////////  -->
 

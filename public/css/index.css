@@ -16,6 +16,7 @@
     margin-right: 20px;
     margin-top: -20px; */
     margin-top: 0;
+    overflow: hidden;
     /* position: fixed; */
 }
 
@@ -30,6 +31,7 @@ body {
 
 .CONTAINER {
     display: flex;
+    z-index: -10000;
 }
 .home1.show .form_container {
     opacity: 1;
@@ -60,20 +62,25 @@ body {
     pointer-events: auto;
 }
 
-.right_container {
+.right_container{
     margin-left: 50px;
     width: 100%;
-    height: 100%;
-    background-color: red;
+    position: relative;
+    height: 100vh;
 }
 
-.right_headerr {
-    height: 13vh;
+.right_headerr{
+    margin-top: 1px;
     background-color: blue;
-    width: 100%;
-}
-.filter {
-    height: 8vh;
-    background-color: green;
+    height: 12vh;
 }
 
+.filter{
+    background-color: red;
+    height: 8vh;
+}
+
+.faturat_table{
+    background-color: yellow;
+    height: 80vh;
+}
