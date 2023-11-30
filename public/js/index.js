@@ -100,9 +100,4 @@ document.getElementById("loginbutton").addEventListener("click", function (e) {
 
 //....................................................................................//
 
-var sidebarCollapse = document.getElementById("sidebarCollapse");
-var rightContainer = document.querySelector(".right_container");
-sidebarCollapse.style.zIndex = 10001111;
-sidebarCollapse.addEventListener('click', function () {
-  rightContainer.classList.toggle("active");
-});
+

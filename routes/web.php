@@ -19,6 +19,9 @@ Route::post('/login', [LogInController::class, 'checkUser'])->name('login');
 Route::post('/changePassword', [UserController::class, 'changePassword']);
 Route::post('/CheckIfFirtsLogin', [UserController::class, 'CheckIfFirtsLogin']);
 Route::get('/getClients', [ClientController::class, 'getClients']);
+Route::get('/clmn', [ClientController::class, 'getColumnNames']);
+Route::post('/tableinfo', [ClientController::class, 'getClientInfoFaturat']);
+
 
 
 

@@ -60,7 +60,7 @@
       </div>
     </section>
     <script src="{{ asset('js/login.js') }}"></script>
-
+    <!-- <script src="{{ asset('js/Table/putInfo.min.js') }}"></script> -->
 
 
 

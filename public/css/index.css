@@ -14,9 +14,11 @@ margin-top: 0;
 position: relative;
 min-width: 300px;
 max-width: 300px;
+z-index: 100000;
 }
 .Big_Contrainer{
     display: flex;
+    z-index: -100000;
 }
 
 #exaple {
@@ -98,6 +100,7 @@ body {
 .right_container{
     display: flex;
     width: 100%;
+    z-index: 100;
 }
 
 @media (max-width: 991.98px){
@@ -110,4 +113,22 @@ body {
 .faturat_table{
     height: 80vh;
     overflow: scroll;
+}
+
+
+#example{
+    overflow-x: scroll;
+}
+
+
+.data_table{
+    width: 140%;
+
+}
+
+.data_table table thead tr th{
+   max-width: 50px;
+   font-size: 12px;
+   overflow: hidden;
+
 }
