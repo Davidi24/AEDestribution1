@@ -11,8 +11,8 @@
     <!-- Google Fonts -->
 
     <!-- ========================================================= -->
-    <link rel="stylesheet" href="css/Table/style.css">
 
+    <link rel="stylesheet" href="css/Table/style.css">
 
 
 
@@ -21,7 +21,6 @@
 
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/table.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
     <!-- Data Table CSS -->
     <link rel='stylesheet' href='https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css'>
@@ -40,23 +39,26 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.bootstrap5.min.css">
     <style>
-        #prova {
-            height: 89vh;
-            overflow: scroll;
-        }
 
-        #example {
-            border: 1px;
-        }
+#prova {
+        height: 89vh;
+        overflow: scroll;
+    }
 
-        .active>.page-link,
-        .page-link.active {
-            background-color: #7d2ae8 !important;
-        }
+    #example {
+        border: 1px;
+    }
 
-        .page-link {
-            color: #7d2ae8;
-        }
+    .active>.page-link,
+    .page-link.active {
+        background-color: #7d2ae8 !important;
+    }
+
+    .page-link {
+        color: #7d2ae8;
+    }
+
+
     </style>
 </head>
 </head>
@@ -161,7 +163,7 @@
 
 
                         <div class="container" style="margin-top:10px;">
-                            <table id="example" class="table table-striped table-bordered" style="width:100%">
+                            <table id="example" class="table table-striped table-bordered">
                                 <thead>
                                     <tr>
                                         <th>id</th>

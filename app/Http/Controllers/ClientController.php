@@ -37,25 +37,29 @@ class ClientController extends Controller
         return response()->json(["message" => $clients]);
     }
 
-    public function getColumnNames()
-    {
-        $columns = DB::select("
-            SELECT COLUMN_NAME
-            FROM INFORMATION_SCHEMA.COLUMNS
-            WHERE TABLE_NAME = '$this->table_name'
-        ");
+    // public function getColumnNames()
+    // {
+    //     $columns = DB::select("
+    //         SELECT COLUMN_NAME
+    //         FROM INFORMATION_SCHEMA.COLUMNS
+    //         WHERE TABLE_NAME = '$this->table_name'
+    //     ");
 
-        $columnNames = array_column($columns, 'COLUMN_NAME');
-        return response()->json(["column_names" => $columnNames]);
-    }
+    //     $columnNames = array_column($columns, 'COLUMN_NAME');
+    //     return response()->json(["column_names" => $columnNames]);
+    // }
+
 
 
     public function getClientInfoFaturat(Request $request)
-    {
-        $vatnumber = $request->input('vatnumber');
+{
+    $vatnumber = $request->input('vatnumber');
+    $perPage = 20;
 
-        $faturaInfo = DB::select("SELECT * FROM $this->table_name WHERE vatnumber = :vatnumber", ['vatnumber' => $vatnumber]);
+    $faturaInfo = DB::table($this->table_name)
+        ->where('vatnumber', $vatnumber)
+        ->paginate($perPage);
 
-        return response()->json($faturaInfo);
-    }
+    return response()->json($faturaInfo);
+}
 }
