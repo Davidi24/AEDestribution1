@@ -1,13 +1,46 @@
 td{
     max-width: 120px !important;
-  overflow-x: hidden;
-overflow-y: scroll;
-white-space: normal;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
   }
+fic{
+    max-width: 120px !important;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+digestmethod{
+    max-width: 120px !important;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    text-overflow: ellipsis;
+}
 
+digestmethod:hover{
+    text-overflow: initial;
+}
+
+td:hover {
+    text-overflow: initial;
+    overflow-x: scroll;
+    cursor:auto;
+  }
+  fic:hover {
+    text-overflow: initial;
+    overflow-x: scroll;
+    cursor: auto;
+  }
   .odd{
+    max-height: 30px;
     line-height: 0.1;
   }
 .even{
+    max-height: 30px;
     line-height: 0.1;
 }
