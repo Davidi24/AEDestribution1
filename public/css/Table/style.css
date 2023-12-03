@@ -38,11 +38,11 @@ td:hover {
   }
   .odd{
     max-height: 30px;
-    line-height: 0.6;
+    line-height: 0.3;
   }
 .even{
     max-height: 30px;
-    line-height: 0.6;
+    line-height: 0.3;
 }
 
 

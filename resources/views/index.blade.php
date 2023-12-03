@@ -165,7 +165,7 @@
                         <div class="container" >
                             <table id="example" class="table table-striped table-bordered">
                                 <thead>
-                                    <tr>
+                                    <tr style="position: relative; overflow: hidden;">
                                         <th>id</th>
                                         <th>request</th>
                                         <th>response</th>
@@ -185,8 +185,8 @@
 
 
                                 </tbody>
-                                <tfoot>
-                                    <tr>
+                                <tfoot style="position: relative; overflow: hidden;">
+                                    <tr >
                                         <th>id</th>
                                         <th>request</th>
                                         <th>response</th>

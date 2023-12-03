@@ -73,13 +73,22 @@ body {
 .right_headerr{
     margin-top: 1px;
     background-color: blue;
-    height: 12vh;
+    height: 13vh;
     z-index: -100;
+    position: fixed;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 .filter{
     background-color: red;
-    height: 8vh;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 13vh;
 }
 
 
@@ -113,6 +122,7 @@ body {
 .faturat_table{
     height: 80vh;
     overflow: scroll;
+    margin-top: 26vh;
 }
 
 
@@ -131,4 +141,8 @@ body {
    font-size: 12px;
    overflow: hidden;
 
+}
+thead tr{
+    background-color: rebeccapurple;
+    border: none;
 }
