@@ -162,7 +162,7 @@
                     <div class="faturat_table">
 
 
-                        <div class="container" style="margin-top:10px;">
+                        <div class="container" >
                             <table id="example" class="table table-striped table-bordered">
                                 <thead>
                                     <tr>

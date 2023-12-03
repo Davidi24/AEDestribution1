@@ -38,9 +38,21 @@ td:hover {
   }
   .odd{
     max-height: 30px;
-    line-height: 0.1;
+    line-height: 0.6;
   }
 .even{
     max-height: 30px;
-    line-height: 0.1;
+    line-height: 0.6;
+}
+
+
+.col-sm-12 .col-md-7{
+    position: fixed;
+    margin-left: 18%;
+    bottom: 10px;
+    right: 10px;
+}
+
+.table.dataTable{
+    margin-top: 40px;
 }
