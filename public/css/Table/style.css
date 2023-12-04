@@ -56,3 +56,21 @@ td:hover {
 .table.dataTable{
     margin-top: 40px;
 }
+
+
+.created{
+    width: 30%;
+    overflow: hidden;
+}
+
+
+
+
+.top{
+    display: flex;
+}
+
+
+.static{
+    margin-right: 200px;
+}

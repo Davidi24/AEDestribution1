@@ -17,3 +17,9 @@ s.col-sm-12 {
     bottom: 10px;
     right: 10px;
 }
+
+
+.created{
+    width: 30%;
+    overflow: hidden;
+}

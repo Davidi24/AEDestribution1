@@ -39,26 +39,23 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.bootstrap5.min.css">
     <style>
+        #prova {
+            height: 89vh;
+            overflow: scroll;
+        }
 
-#prova {
-        height: 89vh;
-        overflow: scroll;
-    }
+        #example {
+            border: 1px;
+        }
 
-    #example {
-        border: 1px;
-    }
+        .active>.page-link,
+        .page-link.active {
+            background-color: #7d2ae8 !important;
+        }
 
-    .active>.page-link,
-    .page-link.active {
-        background-color: #7d2ae8 !important;
-    }
-
-    .page-link {
-        color: #7d2ae8;
-    }
-
-
+        .page-link {
+            color: #7d2ae8;
+        }
     </style>
 </head>
 </head>
@@ -158,62 +155,83 @@
                 <div class="right_right_container">
 
                     <div class="right_headerr">lll</div>
-                    <div class="filter">Filter</div>
-                    <div class="faturat_table">
-
-
-                        <div class="container" >
-                            <table id="example" class="table table-striped table-bordered">
-                                <thead>
-                                    <tr style="position: relative; overflow: hidden;">
-                                        <th>id</th>
-                                        <th>request</th>
-                                        <th>response</th>
-                                        <th>type</th>
-                                        <th>vatnumber</th>
-                                        <th>businessunit</th>
-                                        <th>tcr</th>
-                                        <th>aedid</th>
-                                        <th>createdat</th>
-                                        <th>status</th>
-                                        <th>lastretry</th>
-                                        <th>retrynr</th>
-                                        <th>extrafields</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-
-                                </tbody>
-                                <tfoot style="position: relative; overflow: hidden;">
-                                    <tr >
-                                        <th>id</th>
-                                        <th>request</th>
-                                        <th>response</th>
-                                        <th>type</th>
-                                        <th>vatnumber</th>
-                                        <th>businessunit</th>
-                                        <th>tcr</th>
-                                        <th>aedid</th>
-                                        <th>createdat</th>
-                                        <th>status</th>
-                                        <th>lastretry</th>
-                                        <th>retrynr</th>
-                                        <th>extrafields</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
+                    <div class="filter">
+                        <div class="reservation-box">
+                            <div class="top">
+                                <div class="static">
+                                    <div class="input-container" id="date-picker-container">
+                                        <label for="date-from">check-in</label>
+                                        <input type="date" id="date-checkin" class="date-field" name="date-from">
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="input-container" id="date-picker-container">
+                                        <label for="date-from">check-out</label>
+                                        <input type="date" id="date-checkout" class="date-field" name="">
+                                    </div>
+                                    <div>
+                                        <button id="filter_button">Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
+                        <div class="faturat_table">
+
+
+                            <div class="container">
+                                <table id="example" class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr style="position: relative; overflow: hidden;">
+                                            <th>id</th>
+                                            <th>request</th>
+                                            <th>response</th>
+                                            <th>type</th>
+                                            <th>vatnumber</th>
+                                            <th>businessunit</th>
+                                            <th>tcr</th>
+                                            <th>aedid</th>
+                                            <th>createdat</th>
+                                            <th>status</th>
+                                            <th>lastretry</th>
+                                            <th>retrynr</th>
+                                            <th>extrafields</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+
+                                    </tbody>
+                                    <tfoot style="position: relative; overflow: hidden;">
+                                        <tr>
+                                            <th>id</th>
+                                            <th>request</th>
+                                            <th>response</th>
+                                            <th>type</th>
+                                            <th>vatnumber</th>
+                                            <th>businessunit</th>
+                                            <th>tcr</th>
+                                            <th>aedid</th>
+                                            <th>createdat</th>
+                                            <th>status</th>
+                                            <th>lastretry</th>
+                                            <th>retrynr</th>
+                                            <th>extrafields</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
 
 
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
     </section>
     <!-- ////////////////////////////////////////////////////////////////////////////  -->
+
 
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -224,9 +242,9 @@
     <script src="{{ asset('js/SideBar/popper.js') }}"></script>
     <script src="{{ asset('js/SideBar/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/SideBar/main.js') }}"></script>
-    <script type="module" src="{{ asset('js/SideBar/clients.min.js') }}" ></script>
-    <script type="module" src="{{ asset('js/Table/putInfo.min.js') }}" ></script>
-
+    <script type="module" src="{{ asset('js/SideBar/clients.min.js') }}"></script>
+    <script type="module" src="{{ asset('js/Table/putInfo.min.js') }}"></script>
+    <script type="module" src="{{ asset('js/Table/filterTableDate.min.js') }}"></script>
 
 
 
