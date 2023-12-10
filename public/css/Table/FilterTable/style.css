@@ -1,0 +1,18 @@
+.FilterContainer {
+    height: 35px;
+    display: flex;
+    align-items:center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#first_date{
+width: 50%;
+}
+
+#second_date{
+width: 40%;
+}
+.input-group-append {
+    cursor: pointer;
+  }

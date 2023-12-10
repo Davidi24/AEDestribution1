@@ -1,4 +1,4 @@
-#header {
+/* #header {
     height: 11vh;
     background-color: red;
     width: 100%;
@@ -83,12 +83,13 @@ body {
 
 .filter{
     background-color: red;
-    height: 10vh;
+    height: 17vh;
     position: fixed;
     width: 100%;
     max-height: 300px;
     overflow-y: auto;
     margin-top: 13vh;
+    z-index: 1000000;
     display: flex;
 }
 
@@ -146,4 +147,4 @@ body {
 thead tr{
     background-color: rebeccapurple;
     border: none;
-}
+} */

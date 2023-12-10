@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/login', [LogInController::class, 'loginview']);
-Route::get('/index', [indexController::class, 'indexView'])->name('index');
-Route::get('/prova', [indexController::class, 'provaView'])->name('index');
+Route::get('/indexx', [indexController::class, 'indexView']);
+Route::get('/home', [indexController::class, 'homeView']);
 Route::get('/faturat', [faturatController::class, 'getFaturat']);
 
 Route::get('/', function () {
@@ -21,6 +21,7 @@ Route::post('/CheckIfFirtsLogin', [UserController::class, 'CheckIfFirtsLogin']);
 Route::get('/getClients', [ClientController::class, 'getClients']);
 Route::get('/clmn', [ClientController::class, 'getColumnNames']);
 Route::post('/tableinfo', [ClientController::class, 'getClientInfoFaturat']);
+
 
 
 

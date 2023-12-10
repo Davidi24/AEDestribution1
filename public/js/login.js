@@ -58,7 +58,7 @@ function checkLogin() {
                 error.innerHTML = data.message;
                 console.log(data);
             } else {
-                var routeUrl = "/index";
+                var routeUrl = "/indexx";
                 window.location.href = routeUrl;
             }
         })

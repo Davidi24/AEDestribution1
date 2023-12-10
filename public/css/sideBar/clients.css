@@ -1,34 +1,11 @@
-.clients_wrapper {
-    height: 60px;
-    overflow: hidden;
-    transition: height 0.3s ease; /* Add a smooth transition effect */
-}
-
-.clients_wrapper.active {
-    height: 280px;
-}
-
-
-.clients_wrapper.active #clients {
-    z-index: 100;
+.clientss {
+    max-height: 243px;
     overflow-y: scroll;
-    height: 100%;
-}
-.clients_wrapper:not(.active) {
-    transition: height 0s; /* No transition for closing (instant) */
-}
-
-
-#clientsVatnumber{
-    cursor: pointer;
+    overflow-x: auto;
     padding-left: 20%;
-    z-index: 101;
-}
-#clientsVatnumber:hover{
-background-color: #7449a8;
 }
 
-
-#clients{
-    padding-bottom: 66px;
+#clientsVatnumber {
+    cursor: pointer;
 }
+

@@ -9,6 +9,9 @@ class indexController extends Controller
     function indexView(){
      return view('index');
     }
+    function homeView(){
+        return view('home');
+       }
     function provaView(){
         return view('prova');
        }
