@@ -463,40 +463,28 @@
                         <div class="col">
                             <h3 class="page-title">Data Tables</h3>
                             <div class="FilterContainer">
-                                <div id="first_date">    Froma Date:<section class="container">
-                                        <form class="row">
-                                            <label for="date" class="col-1 col-form-label">Date</label>
-                                            <div class="col-5">
-                                                <div class="input-group date" id="datepicker">
-                                                    <input type="text" class="form-control" id="date" />
-                                                    <span class="input-group-append">
-                                                        <span class="input-group-text bg-light d-block">
-                                                            <i class="fa fa-calendar"></i>
-                                                        </span>
-                                                    </span>
-                                                </div>
+                                <div class="reservation-box">
+                                    <div class="top">
+                                        <div class="static">
+                                        <label for="date-from" id="fromdate">From Date:</label>
+                                            <div class="input-container" id="date-picker-container">
+
+                                                <input type="date" id="date-checkin" class="date-field fromdateinput" name="date-from">
                                             </div>
-                                        </form>
-                                    </section>
-                                </div>
-                                <div id="second_date">To Date:<section class="container">
-                                        <form class="row">
-                                            <label for="date" class="col-1 col-form-label">Date</label>
-                                            <div class="col-5">
-                                                <div class="input-group date" id="datepicker">
-                                                    <input type="text" class="form-control" id="date" />
-                                                    <span class="input-group-append">
-                                                        <span class="input-group-text bg-light d-block">
-                                                            <i class="fa fa-calendar"></i>
-                                                        </span>
-                                                    </span>
-                                                </div>
+                                        </div>
+                                        <div class="flex">
+                                        <label for="date-from" id="todate">To Date:</label>
+                                            <div class="input-container" id="date-picker-container">
+
+                                                <input type="date" id="date-checkout" class="date-field todateinput" name="">
                                             </div>
-                                        </form>
-                                    </section>
+
+                                        </div>
+                                    </div>
                                 </div>
-                                <button>Filter</button>
-                                <button>Clear</button>
+
+                                <button id="filterButton">Filter</button>
+                                <button id="clearButton">Clear</button>
                             </div>
                         </div>
                     </div>
@@ -591,13 +579,13 @@
     <!-- SideBar -->
     <script type="module" src="{{ asset('js/SideBar/clients.min.js') }}"></script>
 
+      <!-- tableFilter -->
+    <script type="module" src="{{ asset('js/Table/filterTable.min.js') }}"></script>
+    <script type="module" src="{{ asset('js/Table/filterFunctionalities.min.js') }}"></script>
 
 
 
-<script>
 
-
-</script>
 </body>
 
 </html>
