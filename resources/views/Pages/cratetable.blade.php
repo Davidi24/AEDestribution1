@@ -98,29 +98,3 @@
 
             </div>
 
-
-  <!-- jQuery -->
-  <script src="{{ asset('home/assets/js/jquery-3.5.1.min.js') }}"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script> -->
-
-
-
-    <!-- Bootstrap Core JS -->
-    <script src="{{ asset('home/assets/js/popper.min.js') }}"></script>
-    <script src="{{ asset('home/assets/js/bootstrap.min.js') }}"></script>
-
-
-    <!-- Slimscroll JS -->
-    <script src="{{ asset('home/assets/js/jquery.slimscroll.min.js') }}"></script>
-
-    <!-- Custom JS -->
-    <script src="home/assets/js/app.js"></script>\
-
-    <!-- SideBar -->
-    <script type="module" src="{{ asset('js/SideBar/clients.min.js') }}"></script>
-    <script type="module" src="{{ asset('js/ChangePages/sidebarChangePages.min.js') }}"></script>
-
-<!-- Datatable JS -->
-<script src="{{ asset('home/assets/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('home/assets/js/dataTables.bootstrap4.min.js') }}"></script>

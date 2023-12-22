@@ -496,17 +496,17 @@
     <script src="{{ asset('home/assets/js/dataTables.bootstrap4.min.js') }}"></script>
 
 
-                <!-- tableFilter
+                <!-- tableFilter -->
                 <script type="module" src="{{ asset('js/Table/filterTable.min.js') }}"></script>
     <script type="module" src="{{ asset('js/Table/filterFunctionalities.min.js') }}"></script>
-    <script type="module" src="{{ asset('js/Table/search.min.js') }}"></script> -->
+    <script type="module" src="{{ asset('js/Table/search.min.js') }}"></script>
 
 
 
      <!-- ExportData -->
-    <!-- <script type="module" src="{{ asset('js/Table/Exportdata/exel.min.js') }}"></script>
+    <script type="module" src="{{ asset('js/Table/Exportdata/exel.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.0/xlsx.full.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
 
 </body>
