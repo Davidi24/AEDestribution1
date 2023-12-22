@@ -17,7 +17,8 @@ class VerifyCsrfToken extends Middleware
         'changePassword',
         'CheckIfFirtsLogin',
         'getClients',
-        'tableinfo'
+        'tableinfo',
+        'createClients',
 
     ];
 }

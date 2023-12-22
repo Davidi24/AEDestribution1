@@ -9,40 +9,42 @@
     <meta name="author" content="Dreamguys - Bootstrap Admin Template">
     <meta name="robots" content="noindex, nofollow">
     <title>Data Tables - HRMS admin template</title>
+ <!----Table---->
+ <link rel="stylesheet" href="css/Table/table.css">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="home/assets/img/favicon.png">
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/x-icon" href="home/assets/img/favicon.png">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="home/assets/css/bootstrap.min.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="home/assets/css/bootstrap.min.css">
 
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="home/assets/css/font-awesome.min.css">
+<!-- Fontawesome CSS -->
+<link rel="stylesheet" href="home/assets/css/font-awesome.min.css">
 
-    <!-- Lineawesome CSS -->
-    <link rel="stylesheet" href="home/assets/css/line-awesome.min.css">
+<!-- Lineawesome CSS -->
+<link rel="stylesheet" href="home/assets/css/line-awesome.min.css">
 
-    <!-- Datatable CSS -->
-    <link rel="stylesheet" href="home/assets/css/dataTables.bootstrap4.min.css">
+<!-- Datatable CSS -->
+<link rel="stylesheet" href="home/assets/css/dataTables.bootstrap4.min.css">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="home/assets/css/style.css">
+<!-- Main CSS -->
+<link rel="stylesheet" href="home/assets/css/style.css">
 
     <!----SideBar---->
     <link rel="stylesheet" href="css/sideBar/clients.css">
 
-    <!----Table---->
-    <link rel="stylesheet" href="css/Table/table.css">
 
-    <!----Filter---->
-    <link rel="stylesheet" href="css/Table/FilterTable/style.css">
+     <!----Filter---->
+     <link rel="stylesheet" href="css/Table/FilterTable/style.css">
+    <link rel="stylesheet" href="css/Table/FilterTable/search.css">
+
+ <!----Table---->
+ <link rel="stylesheet" href="css/Table/table.css">
 
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.min.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
+
+
+
 </head>
 
 <body>
@@ -374,7 +376,7 @@
                             <span>Employees</span>
                         </li>
                         <li class="submenu">
-                            <a href="#" class="noti-dot"><i class="la la-user"></i> <span> Employees</span> <span class="menu-arrow"></span></a>
+                            <a href="{{ asset('indexx') }}" class="noti-dot"><i class="la la-user"></i> <span> Employees</span> <span class="menu-arrow"></span></a>
                             <ul style="display: none; padding-right: 10%;">
                                 <div class="clientss">
 
@@ -382,8 +384,8 @@
 
                             </ul>
                         </li>
-                        <li>
-                            <a href="clients.html"><i class="la la-users"></i> <span>Clients</span></a>
+                        <li class="ClientButton">
+                          <a ><i class="la la-users"></i> <span>Clients</span></a>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="la la-rocket"></i> <span> Projects</span> <span class="menu-arrow"></span></a>
@@ -457,8 +459,7 @@
         <div class="page-wrapper">
             <div class="content container-fluid">
 
-                <!-- Page Header -->
-                <div class="page-header" style="margin-top: 0px;">
+            <div class="page-header" style="margin-top: 0px;">
                     <div class="row">
                         <div class="col">
                             <h3 class="page-title">Data Tables</h3>
@@ -466,14 +467,14 @@
                                 <div class="reservation-box">
                                     <div class="top">
                                         <div class="static">
-                                        <label for="date-from" id="fromdate">From Date:</label>
+                                            <label for="date-from" id="fromdate">From Date:</label>
                                             <div class="input-container" id="date-picker-container">
 
                                                 <input type="date" id="date-checkin" class="date-field fromdateinput" name="date-from">
                                             </div>
                                         </div>
                                         <div class="flex">
-                                        <label for="date-from" id="todate">To Date:</label>
+                                            <label for="date-from" id="todate">To Date:</label>
                                             <div class="input-container" id="date-picker-container">
 
                                                 <input type="date" id="date-checkout" class="date-field todateinput" name="">
@@ -498,7 +499,13 @@
                             <div class="card-body">
 
                                 <div class="table-responsive">
+
                                     <table id="example" class="table datatable table table-stripped table-bordered mb-0">
+                                        <div class="searchTable">
+                                            <button id="excel">Exel</button>
+                                            <label for="search">Search</label>
+                                            <input type="text" id="searchTableButton">
+                                        </div>
                                         <thead>
                                             <tr>
                                                 <th>id</th>
@@ -545,7 +552,10 @@
                     </div>
                 </div>
 
+                <!-- Page Header -->
+
             </div>
+
         </div>
         <!-- /Page Wrapper -->
 
@@ -568,9 +578,7 @@
     <script src="{{ asset('home/assets/js/jquery.slimscroll.min.js') }}"></script>
 
 
-    <!-- Datatable JS -->
-    <script src="{{ asset('home/assets/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('home/assets/js/dataTables.bootstrap4.min.js') }}"></script>
+
 
 
     <!-- Custom JS -->
@@ -578,13 +586,28 @@
 
     <!-- SideBar -->
     <script type="module" src="{{ asset('js/SideBar/clients.min.js') }}"></script>
+    <script type="module" src="{{ asset('js/ChangePages/sidebarChangePages.min.js') }}"></script>
 
-      <!-- tableFilter -->
-    <script type="module" src="{{ asset('js/Table/filterTable.min.js') }}"></script>
+<!-- Datatable JS -->
+<script src="{{ asset('home/assets/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('home/assets/js/dataTables.bootstrap4.min.js') }}"></script>
+
+
+                <!-- tableFilter -->
+                <script type="module" src="{{ asset('js/Table/filterTable.min.js') }}"></script>
     <script type="module" src="{{ asset('js/Table/filterFunctionalities.min.js') }}"></script>
+    <script type="module" src="{{ asset('js/Table/search.min.js') }}"></script>
 
 
 
+     <!-- ExportData -->
+    <script type="module" src="{{ asset('js/Table/Exportdata/exel.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+      <!-- Datatable JS -->
+    <script src="{{ asset('home/assets/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('home/assets/js/dataTables.bootstrap4.min.js') }}"></script>
 
 </body>
 

@@ -85,7 +85,6 @@ document.getElementById("loginbutton").addEventListener("click", function (e) {
                 }
             })
             .then((data) => {
-                console.log(data);
                 if (data.message == "Password changed successfully") {
                     formCloseBtn.click();
                 }
@@ -99,5 +98,6 @@ document.getElementById("loginbutton").addEventListener("click", function (e) {
 });
 
 //....................................................................................//
+
 
 

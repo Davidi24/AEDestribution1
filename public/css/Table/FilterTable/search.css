@@ -1,0 +1,6 @@
+.searchTable{
+    display: flex;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+}
