@@ -7,7 +7,14 @@
 
 #clientsVatnumber {
     cursor: pointer;
+    z-index: 10000;
+
 }
+#clientsVatnumber:hover {
+    background-color: aliceblue;
+}
+
+
 
 .clientss:hover{
     overflow-y: scroll;

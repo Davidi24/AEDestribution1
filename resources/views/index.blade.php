@@ -373,10 +373,10 @@
                             </ul>
                         </li>
                         <li class="menu-title">
-                            <span>Employees</span>
+                            <span>Clients</span>
                         </li>
                         <li class="submenu">
-                            <a href="{{ asset('indexx') }}" class="noti-dot"><i class="la la-user"></i> <span> Employees</span> <span class="menu-arrow"></span></a>
+                            <a href="{{ asset('indexx') }}" class="noti-dot"><i class="la la-user"></i> <span> Clients</span> <span class="menu-arrow"></span></a>
                             <ul style="display: none; padding-right: 10%;">
                                 <div class="clientss">
 
@@ -385,7 +385,7 @@
                             </ul>
                         </li>
                         <li class="ClientButton">
-                          <a ><i class="la la-users"></i> <span>Clients</span></a>
+                          <a ><i class="la la-users"></i> <span>Create Clients</span></a>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="la la-rocket"></i> <span> Projects</span> <span class="menu-arrow"></span></a>

@@ -8,6 +8,7 @@ use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 
+
 Route::get('/createClient', [ClientController::class, 'createUserView']);
 Route::get('/login', [LogInController::class, 'loginview']);
 Route::get('/indexx', [indexController::class, 'indexView']);
